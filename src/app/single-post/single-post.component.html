@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="col-md-12 mt-5" *ngIf="singlePost">
+        <div class="card">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title" [innerHtml]="singlePost.title.rendered"></h5>
+              <span>{{singlePost.date | date:'short'}}</span>
+              <p class="card-text" [innerHtml]="singlePost.content.rendered | slice:0:200"></p>
+            </div>
+          </div>
+    </div>
+</div>

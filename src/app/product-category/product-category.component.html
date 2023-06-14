@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-md-3 mt-5" *ngFor="let cat of allCat">
+        <div class="card">
+            <img class="card-img-top" src="{{cat.img}}" alt="Card image cap">
+            <div class="card-body">
+              <a routerLink="/category/cat/{{cat.slug}}"><h5 class="card-title" [innerHtml]="cat.name"></h5></a>
+              <!-- <span>{{post.date | date:'short'}}</span>
+              <p class="card-text" [innerHtml]="post.content.rendered | slice:0:200"></p>
+              <a routerLink="/post/{{post.id}}" class="btn btn-primary">Read More</a> -->
+            </div>
+          </div>
+    </div>
+</div>
